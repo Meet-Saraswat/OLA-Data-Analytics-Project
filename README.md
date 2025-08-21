@@ -1,44 +1,78 @@
 # OLA-Data-Analytics-Project
-📌 Overview
+🛠️ **Project Highlights – OLA Ride Bookings Analysis (July 2024)**
 
-This project analyzes Ola ride bookings data for July 2024 using SQL for querying, Excel for preprocessing, and Power BI for dashboard creation.
-The goal was to uncover insights on ride success rates, cancellations, customer behavior, and revenue patterns, and present them visually in an interactive report.
+1. **Dataset Creation & Preparation**
 
-📂 **Project Structure**
+Used ChatGPT to generate a realistic synthetic dataset for July 2024.
 
-📝 OLA_Project_SQL_FILE.sql → SQL queries (basic + advanced)
+This eliminated the need to search for external sample data and ensured the dataset aligned perfectly with project goals.
 
-📊 OLA_Project.pbix → Power BI dashboard file
+Pre-processed and cleaned the data using Excel and Power Query in Power BI.
 
-🔑 **Key Insights**
+2. **DAX Measures**
 
-*Overall Trends*: ~62% of rides were successful; ~28% were cancelled.
+Created custom measures such as:
 
-*Vehicle Type*: Sedans and SUVs generated the highest booking values, but E-Bikes had the highest average ride distance.
+- Total Bookings
 
-*Revenue*: Majority of revenue came from Cash (55%) and UPI (40%), while credit/debit cards were minimally used.
+- Successful Bookings
 
-*Cancellations*: Customers canceled mostly due to drivers not moving towards pickup or change of plans.
+- Canceled Bookings
 
-Drivers canceled mainly for car/personal issues or customer-related concerns.
+- Cancellation %
 
-*Cohorts*: Success rates for first-time riders (62.08%) and repeat riders (62.19%) were nearly identical.
+- Average Distance per Ride
 
-⚙️ **Tools Used**
+- Week-over-Week Booking Change %
 
-SQL (MySQL) → data analysis & cohort queries
+- Average Revenue Per Successful Booking
 
-Excel → data cleaning and preprocessing
+  and many more..
 
-Power BI → visualization, KPIs, dashboards
+3. **Visual Insights**
 
-📸 **Dashboard Preview**
-🟢 Overall Performance
+- KPI Cards: Average Revenue Per Successful Booking, Average Distance Per Ride
 
-🚗 Vehicle Type Analysis
+- Stacked Column Chart: Booking Value by Payment Method, Distribution of Ride Distance Per Day
 
-💰 Revenue Breakdown
+- Line Chart: Ride Volume Over Time
 
-❌ Cancellations
+- Cards: Total Bookings, Total Booking Value, Successful Bookings, Cancelled Bookings, Cancellation Rate and many more
 
-⭐ Ratings
+- Pie Chart: Booking Status Breakdown, Cancelled Rides by Customers, Cancelled Rides by Drivers
+
+- Slicer: Date
+
+📊 **Key Insights**
+🚖 ***Ride Overview*** (July 2024)
+
+- Total Bookings: ~1,03,024
+
+- Successful Bookings: ~63,967
+
+- Canceled Bookings: ~28,933
+
+- Success Rate: 62%
+
+- Cancellation Rate: 28.08%
+
+
+🗓️ **First vs. Repeat Rides**
+Cohort	Total Rides	Success Rides	Success %
+            total rides  success_rides   success_rate_pct
+First Ride	  94,544	       58,693	           62.08%
+Repeat Ride	   8,480	        5,274	           62.19%
+
+Insight: Repeat customers show a slightly higher success rate, indicating that once users are onboarded, their booking experience improves.
+
+🚀 **Skills Used**
+
+*ChatGPT for Dataset Generation*
+
+*Excel (Data Pre-cleaning)*
+
+*Power BI (Power Query, Data Modeling, DAX, Visualization)*
+
+*SQL (Exploratory Queries & Cohort Analysis)*
+
+*Data Storytelling*
